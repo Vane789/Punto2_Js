@@ -1,0 +1,22 @@
+<!--Anlly Vanessa Cardona-->
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+      <body>
+	  <form>
+	   <input type="date" id="dateini">
+	   <input type="date" id="datefin">
+	   <input type="button" value="calcular" onclick="calcular()">
+      </form>
+	  <script>
+	    function calcular(){
+		let fechaini =new Date(document.getElementById('dateini').value);
+		let fechafin =new Date(document.getElementById('datefin').value);
+		let diasdic= fechafin.getTime()-fechaini.getTime();
+	    let contdias = Math.round(diasdic/(1000*60*60*24));
+	    window.alert('Sus días: '+contdias);
+		}	
+	  </script>
+	  </body>
+</html>
